@@ -12,7 +12,7 @@ search.get('/search/:l/:page', async ( req, res )=>{
     try {
         const l = req.params.l;
         var page = req.params.page || 1;
-        const movieurl = `https://123movies.org.mx/search/one/page/${page}`;
+        const movieurl = `https://proxy.techzbots1.workers.dev/?u=https://123movies.org.mx/search/${l}/page/${page}`;
         const moviereq = await axios.get(movieurl, {
             headers: {
                 'User-Agent': USER_AGENT,
