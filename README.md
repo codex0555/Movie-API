@@ -214,23 +214,40 @@ console.log(data);
 ### Response Sample
 
 ```
+<----For Movie!---->
 {
-"nextpageavai": true,
-"mixAni": [
+"pnex": "»»",
+"movie": [
 {
-"name": "Isekai Onsen Paradise [UNCENSORED]",
-"jname": "Meitou \"Isekai no Yu\" Kaitakuki: Around 40 Onsen Mania no Tensei Saki wa, Nonbiri Onsen Tengoku deshita [UNCENSORED]",
-"format": "TV",
-"duration": "3m",
-"idanime": "isekai-onsen-paradise-uncensored-18982",
-"sub": "2",
-"dubani": false,
-"totalep": false,
-"img": "https://img.flawlessfiles.com/_r/300x400/100/86/0e/860e709b923e7295527377edc45b9060/860e709b923e7295527377edc45b9060.jpg",
-"pg": "18+"
+"name": "https://i0.wp.com/image.tmdb.org/t/p/w300/3S9u9oMFEwvzt1OGSv9PBowzmiD.jpg",
+"type": "AÅ›oka",
+"img": "HD",
+"id": "aoka-2001/"
 },
-...
 ]
-}
+
+<----For tv-SEries!---->
+{
+"pnex": "»»",
+"movie": [
+{
+"name": "https://i0.wp.com/image.tmdb.org/t/p/w300/a2Ckhf72DfQKRNZpeECxyrqaIV3.jpg",
+"type": "The Mire Season 2",
+"img": "EPS 6",
+"id": "the-mire-season-2/"
+},
+]
+
+<----For Top IMDb!---->
+{
+"pnex": "»»",
+"movie": [
+{
+"name": "https://i0.wp.com/image.tmdb.org/t/p/w300/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+"type": "Inception",
+"img": "HD",
+"id": "inception/"
+},
+]
 ```
 
