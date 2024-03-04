@@ -10,7 +10,7 @@ const USER_AGENT ="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 
 
 app.get('/get', async ( req, res )=>{
     try {
-        const movieurl = `https://123movies.org.mx/123movies/`;
+        const movieurl = `https://proxy.techzbots1.workers.dev/?u=https://123movies.org.mx/123movies/`;
         const moviereq = await axios.get(movieurl, {
             headers: {
                 'User-Agent': USER_AGENT,
