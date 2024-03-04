@@ -56,7 +56,7 @@ app.get('/get', async ( req, res )=>{
 
         res.status(200).json({ suggestionhomeMovie, latest, tv});
     } catch (error) {
-        res.status(400).json({warning: '400'});
+        res.status(400).json({error});
     }
 })
 
