@@ -8,11 +8,11 @@ To get started, you can use the following endpoints:
 
 ### 1. Fetch Home Page Data
 
-**Endpoint:** `https://aniwatch-api-v1-0.onrender.com/api/parse`
+**Endpoint:** `https://movie-api-ed63.onrender.com/api/get`
 
 **Request Sample:**
 ```javascript
-const resp = await fetch("https://aniwatch-api-v1-0.onrender.com/api/parse");
+const resp = await fetch("https://movie-api-ed63.onrender.com/api/get");
 const data = await resp.json();
 console.log(data);
 ```
@@ -52,7 +52,7 @@ console.log(data);
 #### Endpoint
 
 ```sh
-https://aniwatch-api-v1-0.onrender.com/api/search/${query_parameter}/${page}
+https://movie-api-ed63.onrender.com/api/search/${query_parameter}/${page}
 ```
 
 #### Query Parameters
@@ -65,7 +65,7 @@ https://aniwatch-api-v1-0.onrender.com/api/search/${query_parameter}/${page}
 #### Request sample
 
 ```javascript
-const resp = await fetch("https://aniwatch-api-v1-0.onrender.com/api/search/your%20name/1");
+const resp = await fetch("https://movie-api-ed63.onrender.com/api/search/Oppenheimer/1");
 const data = await resp.json();
 console.log(data);
 ```
@@ -92,7 +92,7 @@ console.log(data);
  **Endpoint**
 
 ```sh
-https://aniwatch-api-v1-0.onrender.com/api/genre/${genre_name}/${pagee}
+https://movie-api-ed63.onrender.com/api/genra/${genre_name}/${pagee}
 ```
 
 #### Path Parameters
@@ -107,7 +107,7 @@ https://aniwatch-api-v1-0.onrender.com/api/genre/${genre_name}/${pagee}
 
 ```javascript
 const resp = await fetch(
-  "https://aniwatch-api-v1-0.onrender.com/api/genre/romance/1"
+  "https://movie-api-ed63.onrender.com/api/genra/drama/1"
 );
 const data = await resp.json();
 console.log(data);
@@ -134,7 +134,7 @@ console.log(data);
 **Endpoint**
 
 ```sh
-https://aniwatch-api-v1-0.onrender.com/api/related/${id}
+https://movie-api-ed63.onrender.com/api/movie/${id}
 ```
 
 #### Path Parameters
@@ -147,7 +147,7 @@ https://aniwatch-api-v1-0.onrender.com/api/related/${id}
 
 ```javascript
 const resp = await fetch(
-  "https://aniwatch-api-v1-0.onrender.com/api/related/hunter-x-hunter-128"
+  "https://movie-api-ed63.onrender.com/api/movie/oppenheimer/"
 );
 const data = await resp.json();
 console.log(data);
@@ -190,13 +190,29 @@ console.log(data);
 **Endpoint**
 
 ```sh
-https://aniwatch-api-v1-0.onrender.com/api/mix/${query_paramenter}/${page}
+https://movie-api-ed63.onrender.com/api/showmovie/${query_paramenter}/${page}
 ```
 ### Request Sample
 
 ```javascript
 const resp = await fetch(
-  "https://aniwatch-api-v1-0.onrender.com/api/mix/tv/1"
+  "https://movie-api-ed63.onrender.com/api/showmovie/movies/1"
+);
+const data = await resp.json();
+console.log(data);
+```
+
+```javascript
+const resp = await fetch(
+  "https://movie-api-ed63.onrender.com/api/showmovie/tv-series/1"
+);
+const data = await resp.json();
+console.log(data);
+```
+
+```javascript
+const resp = await fetch(
+  "https://movie-api-ed63.onrender.com/api/showmovie/top-imdb/1"
 );
 const data = await resp.json();
 console.log(data);
@@ -208,7 +224,7 @@ console.log(data);
 | :-------: | :----: | :----------------------------------: | :-------: | :-----: |
 |   `query_parameter`    | string | The Anime You Want To See.. |    Yes    |   --    |
 |   `page`    | int | ----- |    Yes    |   1   |
-|   `movie,ova,ona,subbed-anime,dubbed-anime,special,tv,popular,`    | string | The Anime You Want To See.. |    Yes    |   --    |
+|   `movie,tv-series,top imdb`    | string | The Anime You Want To See.. |    Yes    |   --    |
 
 
 ### Response Sample
