@@ -7,6 +7,7 @@ const search = require('./search.js');
 const show = require('./show.js');
 
 const index = express();
+index.use(cors());
 const PORT = 3001;
 
 index.get('/', async ( req, res )=>{
